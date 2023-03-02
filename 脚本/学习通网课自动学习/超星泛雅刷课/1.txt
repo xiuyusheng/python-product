@@ -1,0 +1,674 @@
+	<input type="hidden" id="showEndCourse" value="0"/>
+	<input type="hidden" id="userId" value="205348969">
+    <!--无课程提示-->
+    		<div class="path-box clear">
+	        <ul class="breadcrumb fl"  style="display:none;"   id="courseNav">
+	            <li><a href="javascript:void(0)"  onclick="getAllCourse()"  >全部课程</a></li>
+	            <li></li>
+	            <li class="active"></li>
+	        </ul>
+	    </div>
+		<div >
+	       <ul class="course-list" id ="courseList">
+	          	           <li class="course clearfix" courseId="233083344" clazzId="73321596" personId="214872176" id="course_233083344_73321596">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=233083344&clazzid=73321596&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/bcf29325dcb5dba949f07bd4e66954db.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=233083344&clazzid=73321596&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="个人理财规划">个人理财规划</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="重庆理工大学">重庆理工大学</p>
+	                   <p class="line2" title="宋蔚蔚">宋蔚蔚</p>
+	                                                 <p>开课时间：2023-02-24～2023-04-16</p>
+                                                <p class="overHidden1">班级：默认班级</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="233083403" clazzId="73321670" personId="214872176" id="course_233083403_73321670">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=233083403&clazzid=73321670&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star2/2014-06/240_130c/1402974177868fteuu.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=233083403&clazzid=73321670&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="微生物与人类健康">微生物与人类健康</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="复旦大学">复旦大学</p>
+	                   <p class="line2" title="钟江">钟江</p>
+	                                                 <p>开课时间：2023-02-24～2023-04-16</p>
+                                                <p class="overHidden1">班级：默认班级</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="225067863" clazzId="73166371" personId="214872176" id="course_225067863_73166371">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=225067863&clazzid=73166371&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/a83f7a04a1ebec7b608e52bdb96b4f5b.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=225067863&clazzid=73166371&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="框架技术应用">框架技术应用</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="黄玲">黄玲</p>
+	                                             <p class="overHidden1">班级：21软件B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="232866964" clazzId="72870636" personId="214872176" id="course_232866964_72870636">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232866964&clazzid=72870636&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/107a65895c5f1b3b8f69b14a315c43fd.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232866964&clazzid=72870636&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="软件测试技术">软件测试技术</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="第4次开课&nbsp;&nbsp;&nbsp;开课时间：2023-02-17~2023-07-15">第4次开课&nbsp;&nbsp;&nbsp;开课时间：2023-02-17~2023-07-15</p>
+	                   <p class="line2" title="黄轶文">黄轶文</p>
+	                                                 <p>开课时间：2023-02-17～2023-07-15</p>
+                                                <p class="overHidden1">班级：2021级软件B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="232756168" clazzId="72585679" personId="214872176" id="course_232756168_72585679">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232756168&clazzid=72585679&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/3b7c8956fd8ac0186d5e4f5ae5de3b3a.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232756168&clazzid=72585679&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="项目管理">项目管理</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="第3次开课&nbsp;&nbsp;&nbsp;开课时间：2023-02-13~2023-07-31">第3次开课&nbsp;&nbsp;&nbsp;开课时间：2023-02-13~2023-07-31</p>
+	                   <p class="line2" title="李震阳">李震阳</p>
+	                                             <p class="overHidden1">班级：21软件B</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="232281984" clazzId="71297710" personId="214872176" id="course_232281984_71297710">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232281984&clazzid=71297710&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/669ca80d6a0c5f74835bb936a41aabca.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=232281984&clazzid=71297710&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="蓝桥杯选拔赛（高级语言程序设计）">蓝桥杯选拔赛（高级语言程序设计）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="杨咏">杨咏</p>
+	                                             <p class="overHidden1">班级：默认班级</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="224762279" clazzId="69513856" personId="214872176" id="course_224762279_69513856">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=224762279&clazzid=69513856&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/3a7c4e2929905646967168696f78ff01.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=224762279&clazzid=69513856&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="Linux">Linux</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="刘越涛">刘越涛</p>
+	                                             <p class="overHidden1">班级：21级软件B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="227443816" clazzId="61551822" personId="214872176" id="course_227443816_61551822">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227443816&clazzid=61551822&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/d65c8d4c94595841086692848cfa3114.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227443816&clazzid=61551822&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="习近平新时代中国特色社会主义思想 概论">习近平新时代中国特色社会主义思想 概论</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="魏成芳">魏成芳</p>
+	                                             <p class="overHidden1">班级：2021级软件技术Ｂ班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="227534485" clazzId="60976017" personId="214872176" id="course_227534485_60976017">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227534485&clazzid=60976017&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/669ca80d6a0c5f74835bb936a41aabca.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227534485&clazzid=60976017&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="服务器端开发">服务器端开发</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="徐丽新">徐丽新</p>
+	                                             <p class="overHidden1">班级：21软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="227383694" clazzId="60596816" personId="214872176" id="course_227383694_60596816">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227383694&clazzid=60596816&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/a83f7a04a1ebec7b608e52bdb96b4f5b.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227383694&clazzid=60596816&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="1+X 技能实战">1+X 技能实战</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="黄轶文">黄轶文</p>
+	                                             <p class="overHidden1">班级：2021级软B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="225488220" clazzId="56966912" personId="214872176" id="course_225488220_56966912">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=225488220&clazzid=56966912&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/8c9ec6b14aa72c81c375091ce79cf7cb.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=225488220&clazzid=56966912&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="职业生涯规划教育">职业生涯规划教育</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="徐丽群">徐丽群</p>
+	                                             <p class="overHidden1">班级：2021级软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="224899835" clazzId="56772628" personId="214872176" id="course_224899835_56772628">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=224899835&clazzid=56772628&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/a1738698a04e5c9a5a8c9ba5d5def623.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=224899835&clazzid=56772628&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="2021-2022-2形势与政策II、 IV">2021-2022-2形势与政策II、 IV</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="陈少娟">陈少娟</p>
+	                                             <p class="overHidden1">班级：21软件技术A、B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="222272342" clazzId="56088131" personId="214872176" id="course_222272342_56088131">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222272342&clazzid=56088131&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/ea9893ae9f5645f31722c655851939c4.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222272342&clazzid=56088131&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="大学生心理健康教育网络课程">大学生心理健康教育网络课程</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="《大学生心理健康教育》课程将带你掀开一角的神秘面纱，通过课程学习，增强大学生解决心理问题的能力，提高大学生的心理素质，促进大学生身心健康发展。">《大学生心理健康教育》课程将带你掀开一角的神秘面纱，通过课程学习，增强大学生解决心理问题的能力，提高大学生的心理素质，促进大学生身心健康发展。</p>
+	                   <p class="line2" title="郭凯娟、王方霞、何少云、查嫣芸、许世娟、郭希、李长虹、易灵">郭凯娟、王方霞、何少云、查嫣芸、许世娟、郭希、李长虹、易灵</p>
+	                                             <p class="overHidden1">班级：2021级软件技术AB班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="223590982" clazzId="52974080" personId="214872176" id="course_223590982_52974080">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=223590982&clazzid=52974080&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/8a0d7e35ecbb20ec4b19f185eed0bc2b.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=223590982&clazzid=52974080&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="网络数据库应用">网络数据库应用</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="黄玲">黄玲</p>
+	                                             <p class="overHidden1">班级：21软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="222913631" clazzId="51464823" personId="214872176" id="course_222913631_51464823">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222913631&clazzid=51464823&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/8a0d7e35ecbb20ec4b19f185eed0bc2b.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222913631&clazzid=51464823&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="思想道德与法治（II）">思想道德与法治（II）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="霍仙丽">霍仙丽</p>
+	                                             <p class="overHidden1">班级：2021级软件技术AB班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="221216958" clazzId="49152873" personId="214872176" id="course_221216958_49152873">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=221216958&clazzid=49152873&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/669ca80d6a0c5f74835bb936a41aabca.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=221216958&clazzid=49152873&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="形势与政策">形势与政策</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="邹春梅">邹春梅</p>
+	                                             <p class="overHidden1">班级：21级软件技术AB班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="215432732" clazzId="46562719" personId="214872176" id="course_215432732_46562719">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=215432732&clazzid=46562719&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/8a0d7e35ecbb20ec4b19f185eed0bc2b.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=215432732&clazzid=46562719&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="马克思主义中国化进程与青年学生使命担当">马克思主义中国化进程与青年学生使命担当</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="霍仙丽">霍仙丽</p>
+	                                             <p class="overHidden1">班级：2021级软件技术AB班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="220410911" clazzId="46296299" personId="214872176" id="course_220410911_46296299">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=220410911&clazzid=46296299&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/7f0ff9fa82776e69425721a714096c58.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                                    <li class="quit-course quitCourseBtn">退课</li>
+                                                        </ul>
+	                                                	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=220410911&clazzid=46296299&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="思想道德与法治（Ⅰ）">思想道德与法治（Ⅰ）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="广东工程职业技术学院马克思主义学院思想道德与法治课教研室">广东工程职业技术学院马克思主义学院思想道德与法治课教研室</p>
+	                   <p class="line2" title="思想道德与法治教研室团队">思想道德与法治教研室团队</p>
+	                                             <p class="overHidden1">班级：21级软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="230006571" clazzId="66695936" personId="214872176" id="course_230006571_66695936">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=230006571&clazzid=66695936&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/18f5f7683b053cedccc8542ba6294838.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=230006571&clazzid=66695936&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=230006571&clazzid=66695936&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="形势与政策">形势与政策</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="第1次开课&nbsp;开课时间：2022-10-01至2023-01-21">第1次开课&nbsp;开课时间：2022-10-01至2023-01-21</p>
+	                   <p class="line2" title="陈少娟等形势与政策教学团队">陈少娟等形势与政策教学团队</p>
+	                                             <p class="overHidden1">班级：2021级软件技术Ａ、Ｂ班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="215276898" clazzId="66194785" personId="214872176" id="course_215276898_66194785">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=215276898&clazzid=66194785&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/dd70f609e575220745949d17ee97eb71.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=215276898&clazzid=66194785&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=215276898&clazzid=66194785&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="毛泽东思想和中国特色社会主义理论体系概论（第四期）">毛泽东思想和中国特色社会主义理论体系概论（第四期）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="方燕">方燕</p>
+	                                             <p class="overHidden1">班级：2021级软件技术Ｂ班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="214919974" clazzId="63634322" personId="214872176" id="course_214919974_63634322">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=214919974&clazzid=63634322&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/7caec9359cf10ec64f2dd64dcf6234f9.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=214919974&clazzid=63634322&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=214919974&clazzid=63634322&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="数据库技术及应用（第四期）">数据库技术及应用（第四期）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="《数据库技术及应用》原为省级精品开放课程《数据库技术及SQLSERVER》">《数据库技术及应用》原为省级精品开放课程《数据库技术及SQLSERVER》</p>
+	                   <p class="line2" title="彭康华">彭康华</p>
+	                                             <p class="overHidden1">班级：2021级软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="227786430" clazzId="61576483" personId="214872176" id="course_227786430_61576483">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227786430&clazzid=61576483&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/55e01849498e3b44554a69a4.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227786430&clazzid=61576483&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=227786430&clazzid=61576483&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="穿T恤听古典音乐">穿T恤听古典音乐</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="上海音乐学院">上海音乐学院</p>
+	                   <p class="line2" title="田艺苗">田艺苗</p>
+	                                             <p class="overHidden1">班级：默认班级</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="226301053" clazzId="58464905" personId="214872176" id="course_226301053_58464905">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=226301053&clazzid=58464905&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/521b574094f2b71a8241c9d57a62efb4.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=226301053&clazzid=58464905&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=226301053&clazzid=58464905&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="面向对象程序设计">面向对象程序设计</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="第3次开课&nbsp;&nbsp;&nbsp;开课时间：2022-07-01~2022-08-31">第3次开课&nbsp;&nbsp;&nbsp;开课时间：2022-07-01~2022-08-31</p>
+	                   <p class="line2" title="徐丽新">徐丽新</p>
+	                                             <p class="overHidden1">班级：21softB</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="213847541" clazzId="54617336" personId="214872176" id="course_213847541_54617336">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=213847541&clazzid=54617336&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/3b7c8956fd8ac0186d5e4f5ae5de3b3a.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=213847541&clazzid=54617336&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=213847541&clazzid=54617336&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="项目管理">项目管理</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="信息工程学院专业群平台课">信息工程学院专业群平台课</p>
+	                   <p class="line2" title="李震阳">李震阳</p>
+	                                             <p class="overHidden1">班级：2021软件技术</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="223131926" clazzId="51839258" personId="214872176" id="course_223131926_51839258">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=223131926&clazzid=51839258&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/0425cf678c99350e83230a8c9e83e309.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=223131926&clazzid=51839258&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=223131926&clazzid=51839258&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="生命科学与伦理">生命科学与伦理</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="西南大学">西南大学</p>
+	                   <p class="line2" title="吴能表">吴能表</p>
+	                                             <p class="overHidden1">班级：默认班级</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="221013677" clazzId="51420314" personId="214872176" id="course_221013677_51420314">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=221013677&clazzid=51420314&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/521b574094f2b71a8241c9d57a62efb4.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=221013677&clazzid=51420314&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=221013677&clazzid=51420314&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="面向对象程序设计（第二期）">面向对象程序设计（第二期）</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title="软件技术专业核心课程">软件技术专业核心课程</p>
+	                   <p class="line2" title="徐丽新">徐丽新</p>
+	                                             <p class="overHidden1">班级：21软B</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="222656533" clazzId="50970362" personId="214872176" id="course_222656533_50970362">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222656533&clazzid=50970362&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/5755f6520316dffa27ec2d928ac1a27f.jpg">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222656533&clazzid=50970362&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=222656533&clazzid=50970362&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="职业英语II(2021级)">职业英语II(2021级)</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="公共英语教学团队">公共英语教学团队</p>
+	                                             <p class="overHidden1">班级：21软件技术B班</p>
+	               </div>
+	           </li>
+	          	           <li class="course clearfix" courseId="218796395" clazzId="46147115" personId="214872176" id="course_218796395_46147115">
+	               <div class="course-cover">
+	                   						   							   <a href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=218796395&clazzid=46147115&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+								   <img src="https://p.ananas.chaoxing.com/star3/240_130c/9d0ef1fce53a0c7e3b8aeefaa8557052.png">
+							   </a>
+						   
+	                                          <ul class="hanlde-list">
+                               <li class="move-to movetobtn">移动到                               </li>
+                                                        </ul>
+	                                                																	 <a class="not-open-tip" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=218796395&clazzid=46147115&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank" tabindex="-1" style="outline: none;">
+									 课程已结束									 </a>
+								                            	                    	               </div>
+	               <div class="course-info">
+	                   <h3 class="inlineBlock">
+	                    														   <a  class="color1" href="https://mooc1-1.chaoxing.com/visit/stucoursemiddle?courseid=218796395&clazzid=46147115&vc=1&cpi=214872176&ismooc2=1&v=2" target="_blank">
+									 <span class="course-name overHidden2" title="职业英语I (2021级)">职业英语I (2021级)</span>
+							   </a>
+							                        	                   </h3>
+	                   <p class="margint10 line2" title=""></p>
+	                   <p class="line2" title="公英教学团队">公英教学团队</p>
+	                                             <p class="overHidden1">班级：2021级软件技术B班</p>
+	               </div>
+	           </li>
+	          	       </ul>
+	       <!--文件夹列表-->
+	   </div>
+	   <!--课程列表 start-->
+	   <!--课程列表 end-->
+      
+   <script>
+   		$(".courseOperationBtn").hide();
+   		if($("#showEndCourse").val() == 1){
+   			$("#endCourseListHref").show();
+   		}
+   		$("#dropCourseListHref").show();
+
+		function checkSuperClassStatus(courseId, classId) {
+			var userId = $("#userId").val();
+			$.ajax({
+				type : "get",
+				url : "/visit/checksuperclassstatus",
+				data : {
+					courseId : courseId,
+					clazzId : classId,
+					uid : userId
+				},
+				dataType : "json",
+				success : function(data){
+					if(data.status){
+						location.href = "ChaoxingClassroomPc://open_type=openMeeting&courseId=" + courseId + "&classId=" + classId + "&browser_uid=" + userId + "&ut=s";
+					}else{
+						alert("该班级暂无在线课堂。");
+					}
+				}
+			})
+
+		}
+   </script>
