@@ -1,0 +1,1468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/mooc2-ans/css/coursedata/common.css?v=2022-0609-1056"/>
+	<link rel="stylesheet" type="text/css" href="/mooc2-ans/css/coursedata/pop.css"/>
+	<link rel="stylesheet" type="text/css" href="/mooc2-ans/css/courselist/q_chapter_icon.css"/>
+	<link rel="stylesheet" type="text/css" href="/mooc2-ans/css/courselist/q_chapter.css?v=2022-1208-1708"/>
+	<style>
+        *{outline: none}
+	    .chapter_item{cursor: pointer}
+	    .dataSearch{ width:200px; height:36px; border-radius:40px;position:relative;}
+        .dataSearch_input{ width:122px; height:34px;font-size:14px; color:#131B26;  border:1px solid #D5D7D9;background:none;position:absolute;left:0;top:0;z-index:2;padding:0 62px 0 14px; border-radius:40px;font-family:microsoft Yahei;}
+        .dataSearch_input:hover,.dataSearch:hover .dataSearch_input{border:1px solid #3a8bff;}
+        .dataSearch_input:focus{outline:none;border:1px solid #3a8bff;}
+        .dataSearch_bnt{ width:16px; height:16px;background:url(/mooc2-ans/images/knowledgepoints/ico-search.png) no-repeat 0 0; background-size:16px auto; border:0 none; cursor:pointer;position:absolute;right:14px;top:50%;margin-top:-8px;z-index:3;outline:none; overflow:hidden;}
+        .dataSearch_input:hover+.dataSearch_bnt,.dataSearch_input:focus+.dataSearch_bnt,.dataSearch:hover .dataSearch_bnt{background-position:0 -20px; background-size:16px auto;}
+        .dataSearch_dele{ width:14px; height:14px; background:url(/mooc2-ans/images/search_dele.png) no-repeat center/14px; display:block; position:absolute; right:40px; top:50%; margin-top:-7px; display:none; z-index:3;}
+        @supports (caret-color:#3a8bff) {
+            .dataSearch_input{
+                color:#131B26;
+                caret-color:#3a8bff;
+            }
+        }
+        .breadcrumb_a {
+             color: #3A8BFF;
+             display: block;
+             max-width: 100px;
+             overflow: hidden;
+             white-space: nowrap;
+             text-overflow: ellipsis;
+         }
+         .NoResult{
+             padding: 325px 0;
+             line-height: 20px;
+             font-size: 14px;
+             color: #8A8B99;
+             text-align: center;
+          }
+        .dataSearch_chapter_searchName{color: #3A8BFF;}
+
+        .catalog_tishi240>.bntHoverTips{ margin-left:-30px;}
+        .catalog_tishi240>.bntHoverTips i{ left:30px;}
+        .catalog_tishi320>.bntHoverTips{ margin-left:-30px;}
+        .catalog_tishi320>.bntHoverTips i{ left:30px;}
+	</style>
+</head>
+<body>
+<div id="chapterFocus" tabindex="0" aria-label="章节"></div>
+<div class="fanyaChapter" id="fanyaChapter">
+<input type="hidden" value="214872176" class="cpi" id="cpi"/>
+<input type="hidden" id="bulletFormat" value=""/>
+<input type="hidden" id="courseId" value="233083344"/>
+<input type="hidden" id="clazzId" value="73321596"/>
+<input type="hidden" id="enc" value="b8e4e73269a89fa5368debd0c40502a2"/>
+<input type="hidden" id="catalog" value="目录"/>
+<div class="fanyaChapterWhite">
+    <div class="chapter_head clearfix">
+
+            <h2 class="xs_head_name fl" tabindex="0"><i class="catalog_points_yi fl"></i>
+
+已完成任务点: <span style="color:#00B368">8</span>/113
+                <div class="catalog_jindu">
+                    <div class="catalog_ressbar"><div class="catalog_ressbar_width" style="width:7%"></div></div>
+                </div>
+            </h2>
+        <div class="dataSearch fr" style="margin-left: 30px;">
+            <div class="fl DySeleft">
+                    <a class="dataSearch_dele" href="javascript:" style="display: none;"></a>
+                                <input type="text" id="searchChapterListByName" name="searchChapterListByName" value="" class="dataSearch_input fl" placeholder="搜索" style="width:122px;padding:0 62px 0 14px;"/>
+                <input type="button" onclick="searchChapterListByName()" value="" class="dataSearch_bnt fl" style="top:18px" aria-label="搜索"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="chapter_body xs_table">
+        <div class="chapter_th">
+            <span class="chapter_th_mulu"><div class="inputCheck fl"><input type="checkbox" name="checkbox" value="" /></div><div id="chapterMsg" style="display: inline;">目录</div></span>
+            <span class="chapter_th_renwu">状态</span>
+        </div>
+        <input type="hidden" value="-1" id="countListSearchChapter"/>
+        <div class="chapter_td">
+            <div class="chapter_verticalLine"></div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">1</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人理财概述">
+                                                                        个人理财概述 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056631"   onclick="toOld('233083344', '705056631', '73321596')" onkeydown="if(event.keyCode == 13){toOld('233083344', '705056631', '73321596');}" tabindex="0" aria-label="课程初识：补足人生必修课程，财商C位强势出道" role="link" href="javascript:;" title="课程初识：补足人生必修课程，财商C位强势出道">
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056631"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">1.1</span> 课程初识：补足人生必修课程，财商C位强势出道 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+                                                                            <div class="catalog_state icon_yiwanc catalog_tishi56"><span class="bntHoverTips">已完成<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056632"   onclick="toOld('233083344', '705056632', '73321596')" onkeydown="if(event.keyCode == 13){toOld('233083344', '705056632', '73321596');}" tabindex="0" aria-label="理财初识：积极开发被动收入，让钱包不再干瘪瘪" role="link" href="javascript:;" title="理财初识：积极开发被动收入，让钱包不再干瘪瘪">
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056632"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">1.2</span> 理财初识：积极开发被动收入，让钱包不再干瘪瘪 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+                                                                            <div class="catalog_state icon_yiwanc catalog_tishi56"><span class="bntHoverTips">已完成<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056633"   onclick="toOld('233083344', '705056633', '73321596')" onkeydown="if(event.keyCode == 13){toOld('233083344', '705056633', '73321596');}" tabindex="0" aria-label="理财误区：陷入理财误区陷阱，洪荒之力真正难使" role="link" href="javascript:;" title="理财误区：陷入理财误区陷阱，洪荒之力真正难使">
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056633"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">1.3</span> 理财误区：陷入理财误区陷阱，洪荒之力真正难使 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+                                                                            <div class="catalog_state icon_yiwanc catalog_tishi56"><span class="bntHoverTips">已完成<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056634"   onclick="toOld('233083344', '705056634', '73321596')" onkeydown="if(event.keyCode == 13){toOld('233083344', '705056634', '73321596');}" tabindex="0" aria-label="规划流程：设定个人理财目标，摸清自身家底情况" role="link" href="javascript:;" title="规划流程：设定个人理财目标，摸清自身家底情况">
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056634"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">1.4</span> 规划流程：设定个人理财目标，摸清自身家底情况 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+                                                                            <div class="catalog_state icon_yiwanc catalog_tishi56"><span class="bntHoverTips">已完成<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056635"   onclick="toOld('233083344', '705056635', '73321596')" onkeydown="if(event.keyCode == 13){toOld('233083344', '705056635', '73321596');}" tabindex="0" aria-label="规划流程：了解资金来龙去脉，修正家庭财务问题" role="link" href="javascript:;" title="规划流程：了解资金来龙去脉，修正家庭财务问题">
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056635"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">1.5</span> 规划流程：了解资金来龙去脉，修正家庭财务问题 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+                                                                            <input type="hidden" value="2" class="knowledgeJobCount"/>
+                                                                            <div class="catalog_jindu catalog_tishi120"><span class="catalog_points_yi">2</span><span class="bntHoverTips">2个待完成任务点<i></i></span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">2</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人理财规划的基本理念">
+                                                                        个人理财规划的基本理念 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056636"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056636"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.1</span> 认识风险：自身可控才下注，防范忧愁难入眠 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056637"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056637"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.2</span> 认识风险：天上掉下的馅饼，可能砸出个陷阱 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056638"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056638"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.3</span> 认识风险：赚钱时落袋为安，亏钱时以命相搏 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056639"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056639"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.4</span> 时间价值：今天明天谁价高，单利复利弄清楚 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056640"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056640"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.5</span> 时间价值： 72法则很神奇，财富何时能翻番 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056641"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056641"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">2.6</span> 时间价值：财富投资需靠前，你的小钱变大钱 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">3</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title=" 流动性规划">
+                                                                         流动性规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056642"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056642"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.1</span> 流动规划：三性协调很重要，流动性来打头阵 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056643"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056643"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.2</span> 存款种类：纷繁复杂品种多，总有一款适合你 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056644"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056644"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.3</span> 存款利率：利率涨跌惹人烦，转存平衡帮你忙 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056645"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056645"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.4</span> 存款组合：放弃定期高收益，任性中冒着傻气 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056646"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056646"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.5</span> 用银行卡：安全使用银行卡，小心盗用没商量 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056647"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056647"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.6</span> 用银行卡：信用卡的小门道，不懂道道要中招 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056648"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056648"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">3.7</span> 其它工具：被动主动选择多，货币基金挑大梁 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">4</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人融资规划">
+                                                                        个人融资规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056649"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056649"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">4.1</span> 个人融资：借钱不要拍脑袋，考虑周全总没错 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056650"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056650"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">4.2</span> 民间借贷：欠条借条分不清，老赖坑你没商量 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056651"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056651"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">4.3</span> 银行贷款：贷款也有选择权，双方匹配才牵手 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056652"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056652"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">4.4</span> 银行贷款：还款方式差异大，提前还款细思量 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">5</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人投资规划">
+                                                                        个人投资规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056653"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056653"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.1</span> 股票投资：基本概念弄清楚，做个明白入市人 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056654"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056654"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.2</span> 股票投资：名称头尾有门道，风险大小一言出 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056655"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056655"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.3</span> 股票投资：投资内外可分析，不断学习方长久 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056656"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056656"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.4</span> 债券投资：债券并非保险箱，黑手仍可靠近它 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056657"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056657"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.5</span> 债券投资：国债品种不太同，投资回报有差异 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056658"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056658"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.6</span> 债券投资：闲置资金无处放，可投国债逆回购 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056659"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056659"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.7</span> 基金投资：基金投资第一步，辨清品种识风险 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056660"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056660"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.8</span> 基金投资：不默默承受费用，不痴痴放走分红 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056661"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056661"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.9</span> 基金投资：基金定投享复利，配置种类按需求  
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056662"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056662"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.10</span> 银行理财：刚性兑付已取消，细读条款自担责 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056663"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056663"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.11</span> 银行理财：挑选产品要仔细，提防飞单套住你 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056664"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056664"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.12</span> 黄金投资：黄金价格常动摇，总是跟风会坏事 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056665"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056665"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.13</span> 黄金投资：黄金投资选择多，适合自己最重要 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056666"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056666"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.14</span> 外汇投资：买入卖出价不同，现钞现汇需分清 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056667"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056667"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.15</span> 外汇投资：投资品种有区别，风险大小很不同 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056668"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056668"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">5.16</span> 网络投资：网络投资虽灵活，提防陷阱防被骗 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">6</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人保险规划">
+                                                                        个人保险规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056669"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056669"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">6.1</span> 保险概念：明白自己的身份，不错过对的时间 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056670"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056670"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">6.2</span> 保险概念：现金价值功能多，免责条款细细读 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056671"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056671"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">6.3</span> 保险种类：保险品种那么多，如何选择考虑好 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056672"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056672"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">6.4</span> 保险选择：多种因素捋一捋，综合思量才保险 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">7</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="个人税收规划">
+                                                                        个人税收规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056673"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056673"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">7.1</span> 税收种类：认清税种不慌张，争做纳税明白人 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056674"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056674"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">7.2</span> 个税变革：个税负担渐渐轻，我们生活日日兴 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056675"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056675"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">7.3</span> 个税计算：收入来源各不同，适用税率有差异 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056676"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056676"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">7.4</span> 专项附加：减税红包送上门，比对条件享扣除 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">8</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="婚姻家庭的理财规划">
+                                                                        婚姻家庭的理财规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056677"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056677"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">8.1</span>  婚前财产：婚前财产属于谁，结婚彩礼能退否 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056678"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056678"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">8.2</span> 结婚财产：共同所有归大家，个人所有归个人 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056679"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056679"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">8.3</span> 结婚财产：婚姻房产那些事，缕缕清楚心更安 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056680"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056680"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">8.4</span> 离婚财产：共同财产一分二，婚中债务如何分 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">9</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="教育规划">
+                                                                        教育规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056681"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056681"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">9.1</span> 教育规划：人力资本最珍贵，教育投资早规划 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056682"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056682"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">9.2</span> 工具选择：主动资金打主力，被动资金做替补 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056683"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056683"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">9.3</span> 案例分析：教育筹备靠积累，适合自己最重要 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">10</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="退休养老规划">
+                                                                        退休养老规划 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056684"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056684"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">10.1</span> 养老规划：养老规划有步骤，根据缺口选产品 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056685"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056685"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">10.2</span> 工具选择：养老工具千万条，条条道路通罗马 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056686"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056686"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">10.3</span> 路径选择：涨跌顺序有影响，提现收益找均衡 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">11</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="阅读">
+                                                                        阅读 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056687"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056687"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">11.1</span> 阅读 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+                        <div class="chapter_unit">
+                            <div class="chapter_item">
+                                <div class="catalog_title chapter_Thats_bnt">
+                                    <div class="inputCheck fl firstNode"><input type="checkbox" name="checkbox" value=""/></div>
+                                    <div class="catalog_num fl"><span><i><em style="font-style:normal;">12</em></i></span></div>
+                                    <div class="catalog_name" tabindex="0"><span title="调查问卷">
+                                                                        调查问卷 </span>
+                                                                        </div>
+                                        <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                                </div>
+                            </div>
+                            <!-- 第二级开始 -->
+                                <div class="catalog_level" style="display:block;">
+                                    <ul>
+                                                <li>
+                                                    <div class="chapter_item" id="cur705056688"  >
+                                                        <div class="catalog_title">
+                                                            <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="705056688"/></div>
+                                                            <div class="catalog_name" >
+                                                                <span class="catalog_sbar">12.1</span> 调查问卷 
+                                                            </div>
+                                                            <div class="catalog_task">
+
+
+
+                                                                            <div class="catalog_state catalog_jindu icon-chuangguan catalog_tishi240"><span class="bntHoverTips">需完成之前闯关任务点，该章节才能解锁<i></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 第三级开始 -->
+                                                    <!-- 第三级结束 -->
+                                                </li>
+                                    </ul>
+                                </div>
+                            <!-- 第二级结束 -->
+                        </div>
+        </div>
+    </div>
+</div></div>
+
+<script type="text/javascript"
+		src="https://fystat-ans.chaoxing.com/log/setlog?personid=214872176&courseId=233083344&classId=73321596&encode=bebc02826315589a20c2dfb8c16be384"></script>
+<script src="../js/backtop.min.js" language="javascript" type="text/javascript"></script>
+
+<script type="text/javascript" src="/mooc2-ans/js/common/jquery.min.js"></script>
+<script type="text/javascript" src="/mooc2-ans/js/common/jquery.nicescroll.min.js"></script><script type="text/javascript" src="/mooc2-ans/js/ServerHost.js"></script>
+
+<script type="text/javascript">
+	var bulletFormat = "";
+	if (bulletFormat != "null" && bulletFormat == "Dot") {
+		$(".catalog_sbar").hide();
+		$(".catalog_num span i em").hide();
+	}
+    $('#fanyaChapter').on('click','.chapter_Thats_bnt',function(ev){
+	// $('.chapter_Thats_bnt').click(function(ev){
+		if($(ev.target).hasClass('inputCheck')) return
+		if($(ev.target).hasClass('popSetupBnt')) return
+		var thatsThis = $(this).parent().next()
+		if(thatsThis.is(':visible')){
+			thatsThis.slideUp(300)
+			$(this).find('.catalog_upDown').removeClass('catalog_upDown_active')
+		}else{
+			thatsThis.slideDown(300)
+			$(this).find('.catalog_upDown').addClass('catalog_upDown_active')
+		}
+	})
+	$(document).on('click','.back_to_top',function(){
+		$('html,body').animate({scrollTop: '0px'}, 300);
+	})
+	function toOld (courseid, knowledgeId, clazzid) {
+		var mooc1Domain = ServerHost.mooc1Domain;
+		var enc = "b8e4e73269a89fa5368debd0c40502a2";
+		var cpi = 214872176;
+		var referUrl = mooc1Domain + "/mycourse/studentstudy?chapterId=" + knowledgeId + "&courseId=" + courseid + "&clazzid=" + clazzid +"&cpi=" + cpi + "&enc=" + enc + "&mooc2=1";
+		var transferUrl = mooc1Domain + "/mycourse/transfer?moocId=" + courseid + "&clazzid=" + clazzid + "&ut=s&refer=" + encodeURIComponent(referUrl);
+		top.location.href = transferUrl;
+	}
+    // 学生章节搜索
+    function searchChapterListByName() {
+        var courseId = $("#courseId").val();
+        var clazzId = $("#clazzId").val();
+        var cpi = $("#cpi").val();
+        var searchChapterListByName = document.getElementById('searchChapterListByName').value.trim();
+        var t = Date.now();
+        var jumpUrl = "/mooc2-ans/mycourse/studentcourse?courseid=" + courseId + "&clazzid="
+            + clazzId + "&cpi=" + cpi + "&searchChapterListByName=" + searchChapterListByName + "&searchKeyFlag=1" + "&t=" + t + "&ut=s";
+        reloadPage(jumpUrl);
+    }
+    // 返回上一级全部目录
+    function backToAllChapter() {
+        var courseId = $("#courseId").val();
+        var clazzId = $("#clazzId").val();
+        var cpi = $("#cpi").val();
+        $('#searchChapterListByName').val("")
+        var t = Date.now();
+        var jumpUrl = "/mooc2-ans/mycourse/studentcourse?courseid=" + courseId + "&clazzid="
+                + clazzId + "&cpi=" + cpi  + "&searchKeyFlag=1" + "&t=" + t + "&ut=s";
+        reloadPage(jumpUrl);
+    }
+    //局部刷新页面
+    function reloadPage(jumpUrl) {
+        var courseDataContent = $("#fanyaChapter");
+        var searchChapterListByName = document.getElementById('searchChapterListByName').value.trim();
+        jQuery.ajax({
+            type: "get",
+            url: jumpUrl,
+            dataType: 'html',
+            async: false,
+            success: function (data) {
+                data = data.replace(/(^\s*)|(\s*$)/g, "");
+                courseDataContent.empty();
+                courseDataContent.append(data);
+                var bulletFormat = "";
+                if (bulletFormat != "null" && bulletFormat == "Dot") {
+                    $(".catalog_sbar").hide();
+                    $(".catalog_num span i em").hide();
+                }
+                if (searchChapterListByName == "undefined" || searchChapterListByName === "") {
+                    $("#chapterMsg").html($("#catalog").val())
+                } else {
+                    var countListSearchChapter = document.getElementById('countListSearchChapter').value;
+                    // $("#catalogSelect").attr("href","javascript:;");
+                    $("#chapterMsg").html('<div style="display: inline-block;"><li style="float: left;"><a class="breadcrumb_a" href="javascript:" onClick="backToAllChapter()">全部目录</a></li>' +
+                        '<li style="float: left;">' + ' > 搜索"' + searchChapterListByName + '"的相关结果 共' + countListSearchChapter + '个' + '</li></div>')
+                }
+            }});
+    }
+    // 搜索框添加 X
+    $('#fanyaChapter').on('input', '.dataSearch_input', function () {
+        var searchValue = $(this).val().trim();
+        if (searchValue == "undefined" || searchValue === "") {
+            $(this).parent().find(".dataSearch_dele").hide()
+        } else {
+            $(this).parent().find(".dataSearch_dele").show()
+        }
+    })
+
+    // $('.dataSearch_dele').click(function(){
+    $('#fanyaChapter').on('click','.dataSearch_dele',function(){
+        $('#searchChapterListByName').val("")
+        // $(this).hide()
+        searchChapterListByName();
+    })
+
+    //回车事件绑定
+    // $('#searchChapterListByName').bind('keyup', function(event) {
+    $('#fanyaChapter').bind('keyup', '#searchChapterListByName', function(event) {
+        if (event.keyCode == "13") {
+            //回车执行查询
+            searchChapterListByName();
+        }
+    });
+</script>
+<script>
+    $(function(){
+        $('#chapterFocus').focus();
+        $("#chapterFocus").keydown(function(event) {
+            // 监听侧边栏对应详情页第一个聚焦点
+            var keyCode = event.keyCode || event.which;
+            if (keyCode == 9 && event.shiftKey) {
+                // 侧边栏发消息,聚焦点击过的菜单选项
+                window.parent.postMessage(JSON.stringify({type: 'nav_stu_top_focus'}),"*");
+            }
+        });
+    })
+</script>
+</body>
+</html>
