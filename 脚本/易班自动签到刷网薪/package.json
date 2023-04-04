@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jsencrypt": "^3.3.2",
+    "node-jsencrypt": "^1.0.0"
+  }
+}
