@@ -2,6 +2,7 @@ import requests
 import execjs
 import re
 import time
+import json
 
 class Login():
     def __init__(self, USER, PASSWORD) -> None:
@@ -44,9 +45,11 @@ return (encrypt.encrypt(PASSWORD));
     def sign(self):  # 签到
         url1 = 'https://www.yiban.cn/ajax/checkin/checkin'
         resp = self.session.post(url=url1, headers=self.head)
+        print(resp.json()['code'],resp.text)
         if resp.json()['code'] == 200:
+            print(f"签到问题<{resp.json()['message']}>")
             optionid = re.search(
-                r'class=\"survey-option\" data-value=\"(?P<id>.*?)\"', resp.text, re.S).group('id')
+                r'class=\\\"survey-option\\\" data-value=\\\"(?P<id>.*?)\\\"', resp.text, re.S).group('id')
             url2 = 'https://www.yiban.cn/ajax/checkin/answer'
             data = {
                 'optionid[]': optionid,
@@ -54,7 +57,7 @@ return (encrypt.encrypt(PASSWORD));
             }
             resp = self.session.post(url=url2, headers=self.head, data=data)
             if resp.json()['code'] == 200:
-                print('签到成功')
+                print(f"签到<{resp.json()['message']}>")
         else:
             print('已经签到过了')
 
@@ -67,6 +70,11 @@ return (encrypt.encrypt(PASSWORD));
                 'postId': '',
                 'userId': ''
             }
+            with open('./cookie.json','r') as f:
+                cook=json.load(f)
+                for i in cook['list']:
+                    cook['num'][i['userid']]=cook['num'].get(i['userid'],0)
+            
             if resp['code'] == 200:
                 for i in resp['data']:
                     for n in range(0,1000,10):
@@ -74,14 +82,19 @@ return (encrypt.encrypt(PASSWORD));
                             'http://www.yiban.cn/ajax/bbs/getListByBoard?offset={}&count={}&boardId={}&orgId=2004278'.format(n,10,i['id']), headers=self.head).json()
                         if resp_['code'] == 200 and resp_['data']:
                             for j in resp_['data']['list']:
-                                    if not j['upNum']:
-
-                                        time.sleep(3)
-                                        data['postId']=j['id']
-                                        data['userId']=j['user']['id']
-                                        resp_1=self.session.post(url=thumb,headers=self.head,data=data).json()
-                                        print(j['user']['name']+'已点赞',resp_1,end='\r')
+                                    if cook['num'][self.USER]<30:
+                                        if not j['upNum']:
+                                            time.sleep(3)
+                                            data['postId']=j['id']
+                                            data['userId']=j['user']['id']
+                                            resp_1=self.session.post(url=thumb,headers=self.head,data=data).json()
+                                            cook['num'][self.USER]+=1
+                                            with open('./cookie.json','w') as f:
+                                                json.dump(cook,f)
+                                            print(j['user']['name']+'已点赞',resp_1)
+                                        else:
+                                            print('已经点过赞了')
                                     else:
-                                        print('已经点过赞了',end='\r')
+                                        return
                         elif not resp_['data']:
                             break

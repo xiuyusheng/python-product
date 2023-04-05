@@ -1,6 +1,5 @@
 import json
 import login_sign
-from multiprocessing import Pool,cpu_count
 import os
 
 def start(USER,PASSWORD):
@@ -18,10 +17,8 @@ if __name__=="__main__":
             list_ = json.load(f)
             for i in list_['list']:
                 list_get.append([i['userid'],i['password']])
-            if len(list_)<=cpu_count():
-                cpu_num=len(list_)
-    pool=Pool(cpu_num)
     print(list_get)
-    pool.starmap(start,list_get)
+    for i in list_get:
+        start(i[0],i[1])
     
 

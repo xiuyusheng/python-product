@@ -68,7 +68,7 @@ if __name__ == '__main__':
             for num in range(len(listStudyTask_response['data'])):
                 bb=Study(login__,num)
                 if(bb):
-                     key_=True
+                    key_=True
         print('学习完成！')
 
         for num in range(len(listStudyTask_response['data'])):
