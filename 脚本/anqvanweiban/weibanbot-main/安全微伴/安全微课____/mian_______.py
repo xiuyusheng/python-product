@@ -2,7 +2,6 @@ import Parts  # 自定义程序包
 import requests
 import time
 import json
-from win11toast import toast,notify, update_progress
 def listStudyTask(User):  # 获取课程信息
     login_ = User['data']
     userId = login_['userId']
@@ -21,7 +20,6 @@ def listStudyTask(User):  # 获取课程信息
     }
     listStudyTask_response = requests.post(
         url=listStudyTask_url, headers=listStudyTask_head, data=listStudyTask_data).json()
-
     return listStudyTask_response
 
 
@@ -112,19 +110,20 @@ def start(userId, password, studyName):
     else:
         print(f'课程：{studyName}')
         print('已通过')
-    toast(userName, f'课程：{studyName}',dialogue=f'{userName}{studyName}已通过' )
+    
+if __name__=="__main__":
+    studyName = [
+        # ['2106200232', '2106200232', ['2022年11月禁毒专题', '2022年11月专题', '2022年12月专题', '2021级入学后安全教育']],
+    # ['2106200248', '2106200248', ['2023年春季专题']],
+    # ['2106200253', '2106200253', ['2023年春季专题']],
+    # ['2106200210', '2106200210', ['2023年春季专题']],
 
-studyName = [
-    # ['2106200232', '2106200232', ['2022年11月禁毒专题', '2022年11月专题', '2022年12月专题', '2021级入学后安全教育']],
-# ['2106200248', '2106200248', ['2023年春季专题']],
-# ['2106200253', '2106200253', ['2023年春季专题']],
-# ['2106200210', '2106200210', ['2023年春季专题']],
-['2106280112', '2106280112', ['2023年春季专题']],
-['2106200152', '2106200152', ['2023年春季专题']],
+    # ['2106280112', '2106280112', ['2023年春季专题']],
+    ['2106200223', '2106200223', ['2023年春季专题']],
 
-    ]
-for i in studyName:
-    for j in i[2]:
-        # 1.学号2.密码3.课程ID，先通过Learningsituation.py下的learning((ID,Password))返回给前端用户选择专题并返回专题号
-        start(i[0], i[1], j)
+        ]
+    for i in studyName:
+        for j in i[2]:
+            # 1.学号2.密码3.课程ID，先通过Learningsituation.py下的learning((ID,Password))返回给前端用户选择专题并返回专题号
+            start(i[0], i[1], j)
     

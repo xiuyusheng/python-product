@@ -13,7 +13,9 @@ if __name__=="__main__":
         try:#?排除错误url
             a=urlparse(url.get())#?解析url
             print(f'\033[1;34;40m解析m3u8\033[0m')
-            play_list = m3u8.load(url.get())#?解析m3u8文件
+            with open('./.m3u8','r') as f:
+
+                play_list = m3u8.load(f.read())#?解析m3u8文件
         except :
             print('\033[1;31;40murl错误\033[0m')
             return
@@ -40,7 +42,7 @@ if __name__=="__main__":
                 os.makedirs('mp4')
             Thread(target=start_A).start()#?分线程执行下载函数
     root =Tk()#?创建图形化界面
-    root.title('m2u8解析器')#?标题
+    root.title('m3u8解析器')#?标题
     root.geometry('400x200')#?大小，长*宽，乘号用小写x代替
     Label(root,text='url:',font=('华文新魏',12),relief=GROOVE,width=5).place(relx=0.1,y=13,relwidth=0.2)#?标签
     url=Entry(root,width=30)#?输入框
