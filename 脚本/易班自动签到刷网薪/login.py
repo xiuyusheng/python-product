@@ -6,6 +6,7 @@ def start(USER,PASSWORD,PUSH):
         yiban=login_sign.Login(USER=USER,PASSWORD=PASSWORD)
         yiban.login_get()#获取密钥
         if yiban.login():#登录
+            yiban.comments()
             yiban.sign()#签到
             yiban.praise(PUSH)#点赞
 if __name__=="__main__":

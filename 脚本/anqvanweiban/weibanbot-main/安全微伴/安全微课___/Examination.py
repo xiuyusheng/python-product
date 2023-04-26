@@ -134,7 +134,7 @@ def start(login__ ,num):
     }
     userProjectId = getTask(token, userId, prepare_startpaper_head, num)
     listPlan_ = listPlan(userProjectId, userId, prepare_startpaper_head)
-    if(listPlan_['examOddNum']==0):
-        return '考试次数用尽'
+    # if(listPlan_['examOddNum']==0):
+    #     return '考试次数用尽'
     return recordQuestion(userId, listPlan_, prepare_startpaper_head)
 

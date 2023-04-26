@@ -30,7 +30,7 @@ class WeibanAPI():
         self.token = token
 
     def getRandomtime(self):
-        delayTime = random.randint(10,20)
+        delayTime = random.randint(5,10)
         return delayTime
 
 

@@ -3,10 +3,12 @@ import requests
 import os
 import time
 from multiprocessing import Pool
-def start(UserId,UserPassword):
+
+
+def start(UserId, UserPassword):
     try:
-        login__=index.login_(UserId,UserPassword)
-        login_=login__['data']
+        login__ = index.login_(UserId, UserPassword)
+        login_ = login__['data']
         userId = login_['userId']
         token = login_['token']
         tenantCode = login_['tenantCode']
@@ -21,37 +23,40 @@ def start(UserId,UserPassword):
             'userId': userId,
             'tenantCode': tenantCode,
         }
-        listStudyTask_response=requests.post(url=listStudyTask_url,headers=listStudyTask_head,data=listStudyTask_data).json()
-        key_=True
+        listStudyTask_response = requests.post(
+            url=listStudyTask_url, headers=listStudyTask_head, data=listStudyTask_data).json()
+        key_ = True
         print('开始学习！')
-        while(key_):
-            key_=False
+        while (key_):
+            key_ = False
             for num in range(len(listStudyTask_response['data'])):
-                bb=index.Study(login__,num)
-                if(bb):
-                     key_=True
+                bb = index.Study(login__, num)
+                if (bb):
+                    key_ = True
         print('学习完成！')
 
         for num in range(len(listStudyTask_response['data'])):
             print('开始考试！')
-            while(True):
-                score=index.Examination_(login__,num)
-                index.set_bank_(login__,num)
-                if(score>=90):
+            while (True):
+                score = index.Examination_(login__, num)
+                index.set_bank_(login__, num)
+                if (score >= 90):
                     print(f'考试合格，成绩{score}')
                     break
-                elif(score==0):
+                elif (score == 0):
                     print('考试次数已用尽 ')
                     break
     except Exception as e:
         print('error: '+str(e))
         os.system("pause")
-        
-if __name__=='__main__':
-    user=[['2106200225','2106200225']
-   
-    ]
-    pool=Pool(5)
-    pool.starmap(start,user)
 
-    
+
+if __name__ == '__main__':
+    user = [
+        ['2106200150', '2106200150'],
+        ['2106200149', '2106200149'],
+        ['2106200132', '2106200132'],
+        ['2106200116', '2106200116'],
+    ]
+    pool = Pool(5)
+    pool.starmap(start, user)
