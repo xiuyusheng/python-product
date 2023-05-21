@@ -24,13 +24,14 @@ class XLX():
         self.work.save('小龙虾商品评价表.xls')
 
     def index_page(self):
-        url = 'https://search.jd.com/Search?keyword=%E5%B0%8F%E9%BE%99%E8%99%BE'
+        url = 'https://search.jd.com/Search?keyword=%E5%B0%8F%E9%BE%99%E8%99%BE&qrst=1&psort=4&stock=1&psort=4&pvid=dc83449083314c29bbf8eca496a041ca&click=1'
         html = self.session.get(url=url, headers=self.head)
         soup = Bea(html.text, 'html.parser')
         urls = list()
         for i in soup.find_all('li', {'class': 'gl-item'}):
             urls.append(i['data-sku'])
-        return urls[:7]#7个商品
+        print(urls)
+        return urls[:1]#7个商品
 
     def comment_page(self):
         url = 'https://api.m.jd.com/'
@@ -45,9 +46,11 @@ class XLX():
                     'page':pages,
                     'pageSize': '100'
                 }
-                for com in self.session.get(url=url,headers=self.head,params=params).json()['comments']:
-                    print(com['nickname'])
-                    self.add_work(username=com['nickname'],usercom=com['content'])
+                resp=self.session.get(url=url,headers=self.head,params=params).json()['comments']
+                if resp:
+                    for com in resp:
+                        # print(com['nickname'])
+                        self.add_work(username=com['nickname'],usercom=com['content'])
         self.save_work()
 
 
