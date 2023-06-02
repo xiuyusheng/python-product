@@ -48,6 +48,8 @@ class CrawlProgram:
         items = list()
         for _ in range(10):
             soup = session.get(url=url, headers=head)
+            with open("2.html", "w", encoding="utf-8") as f:
+                f.write(soup.text)
             try:
                 xy = soup.json()["content"]
                 if "prodInfo" in xy:

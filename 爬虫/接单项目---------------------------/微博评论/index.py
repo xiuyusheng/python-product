@@ -43,7 +43,7 @@ class WB():
                             attitudes_count=k['attitudes_count'],
                             time_=k['created_at'][-4:])
                             
-                self.save_ids.append(k['id'])
+                self.save_ids.append(k['id'].replace(' ',''))
                 print(k['id'],self.work_num)
 
     def seach(self):
