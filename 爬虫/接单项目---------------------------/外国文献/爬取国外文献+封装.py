@@ -1,4 +1,3 @@
-# coding=gbk
 # https://www.jianshu.com/p/3df95dcbd92f/
 # https://blog.csdn.net/qq_41831288/article/details/88706618?
 
@@ -29,7 +28,7 @@ options = webdriver.ChromeOptions()
 # options.add_argument('--headless')
 # 创建一个谷歌驱动器
 s = Service("./chromedriver.exe")
-driver = webdriver.Chrome(options=options,service=s)
+driver = webdriver.Chrome(options=options, service=s)
 driver.set_window_size(800, 900)
 # driver.implicitly_wait(30)
 # driver.maximize_window()
@@ -38,17 +37,17 @@ driver.set_window_size(800, 900)
 def ask_url():
     for page_year in range(86, 88):
         params = {
-            'page_year': page_year,
+            "page_year": page_year,
         }
-        url = 'https://academic.oup.com/restud/issue/' + urlencode(params)
-        url = url.replace('page_year=', '')
+        url = "https://academic.oup.com/restud/issue/" + urlencode(params)
+        url = url.replace("page_year=", "")
         # print(url)
         for page_month in range(1, 7):
             params = {
-                'page_month': page_month,
+                "page_month": page_month,
             }
-            url2 = url + '/' + urlencode(params)
-            url2 = url2.replace('page_month=', '')
+            url2 = url + "/" + urlencode(params)
+            url2 = url2.replace("page_month=", "")
             print(url2)
             get_detail(url2)
 
@@ -59,18 +58,20 @@ def get_detail(url):
     time.sleep(19)
 
     # 获取每期期刊列表
-    total = driver.find_elements(By.XPATH, '//div[@class="content al-article-list-group"]/div')
+    total = driver.find_elements(
+        By.XPATH, '//div[@class="content al-article-list-group"]/div'
+    )
     count = 1
     for li in total:
         try:
             time.sleep(5)
             # 每篇论文链接
             try:
-                link = li.find_element(By.XPATH, './div/h5/a').get_attribute("href")
+                link = li.find_element(By.XPATH, "./div/h5/a").get_attribute("href")
                 # print(link, '\n')
                 get_url_detail(link)
             except:
-                link = ''
+                link = ""
 
         except:
             print(f"第{count}条爬取失败\n")
@@ -85,60 +86,82 @@ def get_detail(url):
 
 
 def get_url_detail(link):
-        # 打开新的标签页
-        js = 'window.open("{}")'.format(link)
-        driver.execute_script(js)
-        time.sleep(5)
-        # 获取driver的句柄
-        n = driver.window_handles
-        # driver切换至最新生产的页面
-        driver.switch_to.window(n[-1])
-        #
-        article_info = {}
-        time.sleep(5)
-        # index = '第' + f'{count}' + "篇"
-        # # print(index)
-        # count += 1
-        # 每篇论文标题
-        try:
-            name = driver.find_element(By.XPATH, '//div[@class="title-wrap"]/h1').text
-            print(name)
-        except:
-            name = ''
-            print('无标题')
-
-        # 每篇论文日期
-        try:
-            date = driver.find_element(By.XPATH, '//div[@class="ww-citation-primary"]').text
-            # print(date)
-        except:
-            date = ''
-            print('无日期')
-        # 每篇论文作者
-        try:
-            author = driver.find_element(By.XPATH, '//div[@class="al-authors-list"]').text.strip().replace('\r', '').replace('\n', '')
-            # print(author)
-        except:
-            author = ''
-            print('无作者')
-        # 每篇论文摘要
-        try:
-            Abstract = driver.find_element(By.XPATH, '//p[@class="chapter-para"]').text
-            # print(Abstract)
-        except:
-            Abstract = ''
-            print('无摘要')
-
-        # items = '\n' + '================================' + '\n序号' + index + '\n日期' + date + '\n标题' + name + '\n作者' + author + '\n摘要' + Abstract
-        items = '\n' + '================================' + '\n日期' + date + '\n标题' + name + '\n作者' + author + '\n摘要' + Abstract + '\n'
-        # print(items)
+    # 打开新的标签页
+    js = 'window.open("{}")'.format(link)
+    driver.execute_script(js)
+    time.sleep(5)
+    # 获取driver的句柄
+    n = driver.window_handles
+    # driver切换至最新生产的页面
+    driver.switch_to.window(n[-1])
+    #
+    article_info = {}
+    time.sleep(5)
+    # index = '第' + f'{count}' + "篇"
+    # # print(index)
+    # count += 1
+    # 每篇论文标题
+    try:
+        name = driver.find_element(By.XPATH, '//div[@class="title-wrap"]/h1').text
         print(name)
+    except:
+        name = ""
+        print("无标题")
 
-        save_to_mongo(items)
+    # 每篇论文日期
+    try:
+        date = driver.find_element(By.XPATH, '//div[@class="ww-citation-primary"]').text
+        # print(date)
+    except:
+        date = ""
+        print("无日期")
+    # 每篇论文作者
+    try:
+        author = (
+            driver.find_element(By.XPATH, '//div[@class="al-authors-list"]')
+            .text.strip()
+            .replace("\r", "")
+            .replace("\n", "")
+        )
+        # print(author)
+    except:
+        author = ""
+        print("无作者")
+    # 每篇论文摘要
+    try:
+        Abstract = driver.find_element(By.XPATH, '//p[@class="chapter-para"]').text
+        # print(Abstract)
+    except:
+        Abstract = ""
+        print("无摘要")
+
+    # items = '\n' + '================================' + '\n序号' + index + '\n日期' + date + '\n标题' + name + '\n作者' + author + '\n摘要' + Abstract
+    items = (
+        "\n"
+        + "================================"
+        + "\n日期"
+        + date
+        + "\n标题"
+        + name
+        + "\n作者"
+        + author
+        + "\n摘要"
+        + Abstract
+        + "\n"
+    )
+    # print(items)
+    print(name)
+
+    save_to_mongo(items)
 
 
 def save_to_mongo(items):
-    with open('The Review of Economic Studies_2019-2021.txt', 'a+', encoding='UTF-8', newline='') as fp:
+    with open(
+        "The Review of Economic Studies_2019-2021.txt",
+        "a+",
+        encoding="UTF-8",
+        newline="",
+    ) as fp:
         fp.write(items)
 
 
@@ -151,9 +174,9 @@ def main():
     finally:
         driver.close()
     end_time = datetime.datetime.now()
-    print('开始时间', start_time)
-    print('结束时间', end_time)
+    print("开始时间", start_time)
+    print("结束时间", end_time)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
