@@ -10,6 +10,7 @@ import warnings
 warnings.filterwarnings("ignore",category=DeprecationWarning)#去除警告
 def ml_url():#图片链接和
     token=login_token.token()
+    print(token)
     url='https://youthstudy.12355.net/apibackend/admin/young/QRCode'
     head = {
     'User-Agent':

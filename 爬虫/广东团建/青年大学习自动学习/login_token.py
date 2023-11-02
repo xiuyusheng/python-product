@@ -1,8 +1,9 @@
 import requests
 import time
 import re
-def token():
-    head1 = {
+import ddddocr
+ocr = ddddocr.DdddOcr()
+head1 = {
         'Accept':
         'application/json, text/javascript, */*; q=0.01',
         'Accept-Encoding':
@@ -32,13 +33,20 @@ def token():
         'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27'
     }
+def ValidCode():
+    url="https://tuanapi.12355.net/login/loginValidCode?t=1698160315047"
+    resp=requests.get(url,headers=head1)
+    validcode=ocr.classification(resp.content)
+    return validcode
+def token():
+    
     # print(int(time.time()))
     resp = requests.get(
-        f"https://tuanapi.12355.net/login/adminLogin?userName=xg21rjb&password=xg21rj_b&loginValidCode=&_={int(time.time()*1000)}",
+        f"https://tuanapi.12355.net/login/adminLogin?userName=xg21rja&password=a4e3e4d7c0ff35e90e529a2287259785&loginValidCode={ValidCode()}&_={int(time.time()*1000)}",
         headers=head1)
-    # print(resp.headers)
+    print(resp.url)
     cookie = resp.headers['Set-Cookie']#登录广东智慧团建获得Cookie
-
+    # print(resp.text)
     # print(cookie)
     head = {
         'Accept':
@@ -73,7 +81,7 @@ def token():
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27'
     }
     resp5=requests.get(f'https://tuanapi.12355.net/questionnaire/getPcYouthLearningUrl?_={int(time.time()*1000)}',headers=head)#请求青年大学习网页链接
-    # print(resp5.text)
+    print(resp5.text)
     resp5_json=resp5.json()
     youthLearningUrl=resp5_json['youthLearningUrl']
     zhtjToken=re.search(r'zhtjToken=(?P<token>.*)',youthLearningUrl).group('token')#提取访问首页面链接所用的token

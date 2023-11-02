@@ -7,16 +7,19 @@ import time
 import re
 import json
 import Dec
+import random
 
 if __name__ == "__main__":
 
 
     # 创建Chrome实例
-    s = Service("./chromedriver.exe")
-    driver = webdriver.Chrome(service=s)
+    
     with open('pack.json','r',encoding='utf-8') as f:
         Data=json.load(f)
     for D in Data['data']:
+        s = Service("./msedgedriver.exe")
+        driver = webdriver.Edge(service=s)
+
         # 打开网页
         driver.get(
             D['coure'])
@@ -39,17 +42,17 @@ if __name__ == "__main__":
 
         aa = wait.until(EC.presence_of_element_located(
             (By.XPATH, '/html/body/div[1]/div/div[1]/button')))
-        time.sleep(2)
-        print(2)
+        time.sleep(1)
         # ?加入课群
         if aa.text == '加入':
             aa.click()
             wait.until(EC.presence_of_element_located(
                 (By.XPATH, '/html/body/div[1]/div/div[5]/div[3]/button[2]'))).click()
-        time.sleep(3)
         # ?点击进入考试
-        wait.until(EC.presence_of_element_located(
-            (By.XPATH, '/html/body/div[1]/div/ul/li[2]'))).click()
+        for p in  wait.until(EC.presence_of_all_elements_located(
+            (By.XPATH, '/html/body/div[1]/div/ul/li'))):
+            if p.text == "在线考试" and aa.text != '加入':
+                p.click()
         # ?XPATH地址
         path_ = '/html/body/div/div[1]/div[2]/main/article/div/div[5]/button[2]' \
             if '分' in wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[2]/main/article/div/div[3]/div/span'))).text else \
@@ -99,21 +102,24 @@ if __name__ == "__main__":
 
                 # 答案解密
                 decrypto = Dec.crypto(iv_=iv, yibanid=key)
+
                 # 当前题目
                 print('开始答题')
                 for i in answers['value']['paper']:
+                    print(i['subjects'])
                     for j in i['subjects']:
-                        time.sleep(0.5)
-                        an = list(j['option'][int(k)][0] for k in re.findall(
-                            r'\d{1}', decrypto.decrypto(j['answer'])))
-                        for k in wait.until(EC.presence_of_all_elements_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/main/main/div/div/div/div/div/ul/li'))):
-                            print(k,k.text)
-                            if k.text[2:] in an:
-                                k.click()
+                        time.sleep(random.random()*2)
+                        an =  re.search( r"\[\"(?P<uu>.*?)\"\]", decrypto.decrypto(j["answer"])).group("uu").encode('utf-8').decode('unicode_escape')
+                        k = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'exam-input')))
+                            #  for k in wait.until(EC.presence_of_all_elements_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/main/main/div/div/div/div/div/ul/li'))):
+                        k[0].click()
+                        print(an)
+                        k[0].send_keys(an)
                         wait.until(EC.presence_of_element_located(
                             (By.XPATH, '/html/body/div[1]/div[1]/div[2]/main/main/div/ul/li[4]/button'))).click()
                 wait.until(EC.presence_of_element_located(
                             (By.XPATH, '/html/body/div[1]/div[1]/div[1]/div[3]/div/button'))).click()
                 wait.until(EC.presence_of_element_located(
                             (By.XPATH, '/html/body/div[1]/div[1]/div[1]/div[3]/div/div/div/div[2]/button[2]'))).click()
-                time.sleep(50)
+                time.sleep(1)
+                driver.close()

@@ -5,7 +5,7 @@ import ddddocr#验证码识别库
 ocr = ddddocr.DdddOcr()
 
 
-ctx = execjs.compile(r'''var CryptoJS=require(`d:\\desktop_new____________________________________________\\python脚本\\python-crawler-practice\\脚本\\anqvanweiban\\weibanbot-main\\node_modules\\crypto-js`)
+ctx = execjs.compile(r'''var CryptoJS=require
 
 function login(verifyCode,time_t,userid,userpassword){
   const initKey = "xie2gg";

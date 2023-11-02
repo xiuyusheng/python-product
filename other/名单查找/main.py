@@ -53,8 +53,9 @@ if __name__ == "__main__":
         if '.xlsx' in i or '.xls' in i:
             data = xlrd.open_workbook(i)
             table = data.sheets()[0]
-            row = table.row(4)
+            row = table.row(2)
             x = 0
+            print(row)
             for i, j in enumerate(row):
                 if '学号' in str(j.value):
                     x = i
