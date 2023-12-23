@@ -4,13 +4,13 @@ from tkinter import ttk
 from GoodsList import GoodsList
 from Goods import Goods
 from DBConnection import DBConnection
-import users_data
-import UserS
+# import users_data
+# import UserS
 
 
 class GUI:
-    def __init__(self, user_data):
-        self.data = user_data
+    def __init__(self, ):
+        # self.data = user_data
         # 用于存放商品信息
         self.goodsinfo = []
         # 主窗口
@@ -65,7 +65,7 @@ class GUI:
         )
         # 这个按钮后面在函数中需要变动，所以设为全局变量
         self.comfirm3 = tk.Button(self.frm_t, text="加入关注", width=20)
-        self.user_data = users_data.users()
+        # self.user_data = users_data.users()
 
     # 获取信息
     def getInfo(self):
@@ -229,41 +229,41 @@ class GUI:
         self.window.attributes("-disabled", 0)
         self.window_sign_up.destroy()
 
-    def updata_(self):
-        result = self.user_data.update(
-            UserS.user_data(
-                userid=self.data.getuserid(),
-                passwd=self.userPassword.get(),
-                name=self.username.get(),
-                emails=self.useremails.get(),
-                phone=self.userphone.get(),
-            )
-        )
-        if result:
-            tk.messagebox.showinfo(title="提示", message="修改成功")
+    # def updata_(self):
+    #     # result = self.user_data.update(
+    #     #     UserS.user_data(
+    #     #         userid=self.data.getuserid(),
+    #     #         passwd=self.userPassword.get(),
+    #     #         name=self.username.get(),
+    #     #         emails=self.useremails.get(),
+    #     #         phone=self.userphone.get(),
+    #     #     )
+    #     # )
+    #     if result:
+    #         tk.messagebox.showinfo(title="提示", message="修改成功")
 
-        else:
-            tk.messagebox.showinfo(title="提示", message="修改失败")
-        self.window_sign_up.destroy()
-        self.window.attributes("-disabled", 0)
+    #     else:
+    #         tk.messagebox.showinfo(title="提示", message="修改失败")
+    #     self.window_sign_up.destroy()
+    #     self.window.attributes("-disabled", 0)
 
     # 个人中心
-    def personal(self):
-        # ?冻结主窗口
-        self.window.attributes("-disabled", 1)
-        # ?子页面
-        self.window_sign_up = tk.Toplevel(self.window)
-        self.window_sign_up.geometry("350x380")
-        self.window_sign_up.title("Personal center")
+    # def personal(self):
+    #     # ?冻结主窗口
+    #     self.window.attributes("-disabled", 1)
+    #     # ?子页面
+    #     self.window_sign_up = tk.Toplevel(self.window)
+    #     self.window_sign_up.geometry("350x380")
+    #     self.window_sign_up.title("Personal center")
 
-        self.userPassword = tk.StringVar()
-        self.userPassword.set(self.data.getpasswd())
-        self.username = tk.StringVar()
-        self.username.set(self.data.getname())
-        self.useremails = tk.StringVar()
-        self.useremails.set(self.data.getemails())
-        self.userphone = tk.StringVar()
-        self.userphone.set(self.data.getphone())
+    #     self.userPassword = tk.StringVar()
+    #     self.userPassword.set(self.data.getpasswd())
+    #     self.username = tk.StringVar()
+    #     self.username.set(self.data.getname())
+    #     self.useremails = tk.StringVar()
+    #     self.useremails.set(self.data.getemails())
+    #     self.userphone = tk.StringVar()
+    #     self.userphone.set(self.data.getphone())
 
         x, y = 60, 50
         X_L = 50
@@ -273,7 +273,7 @@ class GUI:
         tk.Label(self.window_sign_up, text="emails:").place(x=x, y=y + 150)
         tk.Label(self.window_sign_up, text="phone:").place(x=x, y=y + 200)
 
-        tk.Label(self.window_sign_up, text=self.data.getuserid()).place(x=x + X_L, y=y)
+        # tk.Label(self.window_sign_up, text=self.data.getuserid()).place(x=x + X_L, y=y)
         tk.Entry(self.window_sign_up, textvariable=self.userPassword).place(
             x=x + X_L, y=y + 50
         )
@@ -384,8 +384,8 @@ class GUI:
         comfirm1 = tk.Button(self.frm_t, text="开始爬取", command=self.getInfo, width=20)
         comfirm1.place(x=980, y=30)
         # 个人中心
-        comfirm = tk.Button(self.frm_t, text="个人中心", command=self.personal, width=16)
-        comfirm.place(x=350, y=90)
+        # comfirm = tk.Button(self.frm_t, text="个人中心", command=self.personal, width=16)
+        # comfirm.place(x=350, y=90)
         # 开始比价
         comfirm2 = tk.Button(self.frm_t, text="开始比较", command=self.compare, width=16)
         comfirm2.place(x=500, y=90)
@@ -433,6 +433,6 @@ class GUI:
         # self.window.mainloop()
 
 
-# if __name__ =='__main__':
-#     ui = GUI()
-#     ui.mainwindow()
+if __name__ =='__main__':
+    ui = GUI()
+    ui.mainwindow()

@@ -50,7 +50,7 @@ wc = wordcloud.WordCloud(font_path="msyh.ttc",
                          width=2000,
                          height=2000,
                          background_color='white',
-                         max_words=10000, stopwords=stopwords)
+                         max_words=1000, stopwords=stopwords)
 # msyh.ttc电脑本地字体，写可以写成绝对路径
 wc.generate(text)  # 加载词云文本
 wc.to_file("流浪地球2.png")  # 保存词云文件

@@ -99,12 +99,12 @@ class DBConnection:
             print(goods.getID() + "更新失败" + str(e))
 
 
-if __name__ == "__main__":
-    # 测试用例
-    dbc = DBConnection()
-    # g = Goods('11111', 'test', 'test', 'test', 20.00, '10万', 'test')
-    info = dbc.getInfo()
-    for i in info:
-        # gs = Goods(i[0],i[1],i[2],i[3],i[4],i[5],i[6])
-        # dbc.save(gs)
-        print(i)
+# if __name__ == "__main__":
+#     # 测试用例
+#     dbc = DBConnection()
+#     # g = Goods('11111', 'test', 'test', 'test', 20.00, '10万', 'test')
+#     info = dbc.getInfo()
+#     for i in info:
+#         # gs = Goods(i[0],i[1],i[2],i[3],i[4],i[5],i[6])
+#         # dbc.save(gs)
+#         print(i)

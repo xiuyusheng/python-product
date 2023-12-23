@@ -278,22 +278,22 @@ class CrawlProgram:
             return 0
 
 
-if __name__ == "__main__":
-    # 测试用例
-    input_keyword = "手机"
-    input_number = 20
-    cr = CrawlProgram()
-    its = []
-    its.extend(cr.getItemsFromJD(input_keyword, input_number))
-    # its.extend(cr.getItemsFromgome(input_keyword, input_number))
-    # its.extend(cr.getItemsFromPinduoduo(input_keyword,input_number))
-    for it in its:
-        print(
-            it.getID(),
-            it.getPlatform(),
-            it.getTitle(),
-            it.getShop(),
-            it.getPrice(),
-            it.getSales(),
-            it.getHref(),
-        )
+# if __name__ == "__main__":
+#     # 测试用例
+#     input_keyword = "手机"
+#     input_number = 20
+#     cr = CrawlProgram()
+#     its = []
+#     its.extend(cr.getItemsFromJD(input_keyword, input_number))
+#     # its.extend(cr.getItemsFromgome(input_keyword, input_number))
+#     # its.extend(cr.getItemsFromPinduoduo(input_keyword,input_number))
+#     for it in its:
+#         print(
+#             it.getID(),
+#             it.getPlatform(),
+#             it.getTitle(),
+#             it.getShop(),
+#             it.getPrice(),
+#             it.getSales(),
+#             it.getHref(),
+#         )

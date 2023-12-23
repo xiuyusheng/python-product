@@ -96,19 +96,19 @@ class GoodsList:
         # )
 
 
-if __name__ == "__main__":
-    gl = GoodsList("钢笔", 20, tmall=True, jd=True, pdd=True)
-    gl.getGoods()
-    ls = gl.sort()
-    dbc = DBConnection()
-    for it in ls:
-        print(
-            it.getID(),
-            it.getPlatform(),
-            it.getTitle(),
-            it.getShop(),
-            it.getPrice(),
-            it.getSales(),
-            it.getHref(),
-        )
+# if __name__ == "__main__":
+#     gl = GoodsList("钢笔", 20, tmall=True, jd=True, pdd=True)
+#     gl.getGoods()
+#     ls = gl.sort()
+#     dbc = DBConnection()
+#     for it in ls:
+#         print(
+#             it.getID(),
+#             it.getPlatform(),
+#             it.getTitle(),
+#             it.getShop(),
+#             it.getPrice(),
+#             it.getSales(),
+#             it.getHref(),
+#         )
         # dbc.save(it)
